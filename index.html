@@ -1,4 +1,4 @@
-<html>
+﻿<html>
 
 <head>
     <title>Test Page</title>
@@ -29,28 +29,4 @@
     </div>
 
 </body>
-
-<!--Simple Javascript, Checks the time and changes message according to time-->
-<script type="text/javascript">
-    var currentTime = new Date().getHours();
-    // afternoon: after 12pm and before 7pm
-    // if currentTime is <= 12 and currentTime is < 19 display greeting/title "こんにちは!"
-    // "こんにちは!" = Hi there!
-    if (12 <= currentTime && currentTime < 19) {
-        if (document.body) {
-            document.getElementsByTagName("title")[0].innerHTML = "こんにちは!";
-            document.getElementById("greeting").innerHTML = "こんにちは!";
-        }
-    }
-    // night: after 7pm and before 4am
-    // if currentTime is >= 19 and currentTime is < 4 then display greeting/title "こんばんは!"
-    // "こんばんは!" = Good Evening!
-    else if (currentTime >= 19 || currentTime < 4) {
-        if (document.body) {
-            document.getElementsByTagName("title")[0].innerHTML = "こんばんは!";
-            document.getElementById("greeting").innerHTML = "こんばんは!";
-        }
-    }
-</script>
-
 </html>
